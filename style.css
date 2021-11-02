@@ -1,0 +1,125 @@
+/* general */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* container */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+/* title */
+
+h1 {
+	font-size: 3rem;
+	font-weight: 50;
+	margin: 1rem 0 3rem;
+	text-align: center;
+	color: #ff0000;
+}
+
+.title {
+	font-weight: 800;
+	color: #fff;
+}
+
+/* input */
+
+.input-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.input {
+	padding: 0.5rem 1rem;
+	height: 50px;
+	outline: none;
+	background-color: #fff;
+	width: 450px;
+	font-size: 1.15rem;
+	margin: 0.25rem;
+	border-radius: 5px;
+	border: none;
+}
+
+.item-wrapper {
+	padding: 0.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 4px solid #fff;
+}
+
+.item-input {
+	background: none;
+	outline: none;
+	color: #fff;
+	border: none;
+	width: 350px;
+	font-size: 1.4rem;
+}
+
+/* buttons */
+
+.add-btn {
+	height: 50px;
+	width: 50px;
+	margin: 0.25rem;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	color: #ff0000;
+	cursor: pointer;
+}
+
+.add-btn:hover {
+	opacity: 0.7;
+}
+
+.edit-btn,
+.remove-btn {
+	font-size: 1rem;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.edit-btn {
+	margin: 0 0.5rem;
+	color: #fff;
+}
+
+.remove-btn {
+	color: #ff0000;
+}
